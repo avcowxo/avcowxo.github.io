@@ -1,0 +1,165 @@
+.circle{
+    border-radius:50%;
+    user-select:none;
+    -webkit-user-drag: none;
+    pointer-events: all;
+}
+
+.toggle{
+    width: 44px;
+    height: 22px;
+    border-radius: 15px;
+    background-color: #000000;
+    filter: drop-shadow(6px 3px 5px #00000000) drop-shadow(-4px -2px 5px #30282d00);
+    transform: translate(0%, 13%)
+}
+
+#uppercanvas > .main{
+    display: none;
+}
+
+#uppercanvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    cursor: none;
+    z-index: 3;
+}
+
+#itemcanvas{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    cursor: none;
+    z-index: 7;
+}
+
+.slider{
+    width: 15px;
+    height: 15px;
+    border-radius: 9px;
+    background-color: #fff;
+    position: absolute;
+    left: 3.5px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+
+img{
+    user-select:none;
+    -webkit-user-drag: none;
+}
+
+.main{
+    position: absolute;
+    z-index: 2;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%)
+}
+
+.imagecontainer{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(1px);
+    z-index:1;
+}
+
+.imagecontainer > img{
+    height: 100.5%;
+    width: 100.5%;
+    object-fit: cover;
+    border-radius: inherit;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item > img{
+    height: 101.5%;
+    width: 101.5%;
+    object-fit: cover;
+    border-radius: inherit;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#canvas{
+    position:absolute;
+    left:50%;
+    top:50%;
+    white-space: nowrap;
+    width: 200vw;
+    height: 200vh;
+    pointer-events: none;
+    z-index:2;
+    transform: translate(0px, 0px);
+}
+
+.item{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(-1px);
+    z-index:1;
+    pointer-events: none;
+}
+
+#lowercanvas{
+    position:absolute;
+    left:50%;
+    top:50%;
+    white-space: nowrap;
+    width: 200vw;
+    height: 200vh;
+
+    z-index:0;
+}
+
+
+#text{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    left:50%;
+    top:50%;
+    transform: translate(70%, 100%);
+}
+
+p{
+    margin:0px;
+}
+
+body{
+    background-color:#181417;
+    color:white;
+    overflow:hidden;
+    font-family: 'Rubik', sans-serif;
+    text-align:center;
+    cursor: none;
+    user-select: none;
+}
+
+#cursor{
+    position:absolute;
+    background-color: #ffffff;
+    z-index: 6;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+    transform:translate(-50%, -50%);
+    pointer-events: none; /* otherwise mouseout will fire when the actual cursor enters #cursor and exits the circle */
+    /* mix-blend-mode: difference; */
+    box-shadow: 5px 5px 15px #000000;
+} 
+

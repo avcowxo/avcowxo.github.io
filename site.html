@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <script src="scripts.js"></script>
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <div class="circle" id="cursor"></div>
+    <div id="overlay" style="z-index: 9998; display: none;"></div>
+    <div id="itemcanvas">
+
+    </div>
+    <div id="uppercanvas">
+        
+    </div>
+    <div id="canvas">
+        <div class="main circle" id="circle1">
+                <div class="imagecontainer circle" style="background-color:white;">
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1559090337-8631216533fd?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=1892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1568827999250-3f6afff96e66?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1552689486-f6773047d19f?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1571050045617-cbbd5e68d181?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1621423828877-f6afc6fafa90?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1584982890941-b788ae5a54df?q=80&w=1696&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle2">
+                <div class="imagecontainer circle" style="background-color:white;">
+                    <img src="https://images.unsplash.com/photo-1611142288262-3bb8f5fc45d7?q=80&w=1698&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1611142288262-3bb8f5fc45d7?q=80&w=1698&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1509909756405-be0199881695?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmFsbG9vbnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1525351159099-81893194469e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhbGxvb258ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJhbGxvb258ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1580878481602-3614efdcfb2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGJhbGxvb258ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1529153856829-f8c6aeee2e48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGJhbGxvb258ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1517981834318-5f56734fe518?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGJhbGxvb258ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1615192606632-9c9d005f6a2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhbGxvb258ZW58MHwwfDB8fHww">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle11">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0fGVufDB8MHwwfHx8MA%3D%3D">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0fGVufDB8MHwwfHx8MA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhdHxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1501820488136-72669149e0d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhdHxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1571570703598-39eb580a0329?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNhdHxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1475518112798-86ae358241eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU4fHxjYXR8ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1516750105099-4b8a83e217ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU5fHxjYXR8ZW58MHwwfDB8fHww">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle4">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1489674267075-cee793167910?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2ludGVyfGVufDB8MHwwfHx8MA%3D%3D">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1489674267075-cee793167910?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2ludGVyfGVufDB8MHwwfHx8MA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdpbnRlcnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1581196607303-95c00f31c676?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbnRlcnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1422207134147-65fb81f59e38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbnRlcnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1480497490787-505ec076689f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHdpbnRlcnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1423145406370-2b342ae5b597?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHdpbnRlcnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1477601263568-180e2c6d046e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHdpbnRlcnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHdpbnRlcnxlbnwwfDB8MHx8fDA%3D">
+                </div>
+        </div>
+        <div class="main circle" id="circle5">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1432958576632-8a39f6b97dc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFudGFzeXxlbnwwfDB8MHx8fDA%3D">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1548445929-4f60a497f851?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZhbnRhc3l8ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFudGFzeXxlbnwwfDB8MHx8fDA%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGZhbnRhc3l8ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1558127920-90f28455f888?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGZhbnRhc3l8ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1553986782-9f6de60b51b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGZhbnRhc3l8ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1607496220596-ec431b041a89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGZhbnRhc3l8ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1617275528041-696c1e3d1872?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGZhbnRhc3l8ZW58MHwwfDB8fHww">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1593410733607-4fe72c8f3f73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGZhbnRhc3l8ZW58MHwwfDB8fHww">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle6">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1571951108445-bb978a19c988?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9jZWFuJTIwbmlnaHR8ZW58MHwwfDB8fHwy">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1515021863624-9b325c51faab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG9jZWFuJTIwbmlnaHR8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1622088763880-a869ac41e539?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG9jZWFuJTIwbmlnaHR8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1613563793674-131714ba1dc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG9jZWFuJTIwbmlnaHR8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1594814532732-37c265b0dd3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2NlYW4lMjBuaWdodHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1580659986392-440ea995857c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2NlYW4lMjBuaWdodHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1536183922588-166604504d5e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2NlYW4lMjBuaWdodHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1596307506750-8fc6abe55f83?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW4lMjBuaWdodHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8b2NlYW4lMjBuaWdodHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle7">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/362640296_275399995180251_8780558929766003670_n.png?stp=dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Xvqahync7swAX_NP3E0&_nc_ht=scontent.fhan2-4.fna&oh=00_AfD_GnZYnITCxDu61xoe0tqxbGwtRzI0GfSl3oT5FLUJ1Q&oe=65569DB5">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1515356619894-b89131037e3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNhc3RsZXxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1571301092535-61a418b457dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FzdGxlfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1563786785330-2ad8162ef53a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhc3RsZXxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1573059225035-dcef0018bcc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhc3RsZXxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1583997052103-b4a1cb974ce5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNhc3RsZXxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1432671431739-d0ba1dd6e3c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FzdGxlfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1546405439-fdf97d946f48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGNhc3RsZXxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1604579928748-9da87a135c51?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle8">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1574376407492-c3cf78231def?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1507371341162-763b5e419408?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1503416997304-7f8bf166c121?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1508255139162-e1f7b7288ab7?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGF1dHVtbnxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1507783548227-544c3b8fc065?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1481127950397-88e4c4f4b83b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1535406148013-5806f2127f58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGF1dHVtbnxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1507967669805-c23336beea5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGF1dHVtbnxlbnwwfDB8MHx8fDI%3D">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle9">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1535535112387-56ffe8db21ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RlYW0lMjB0cmFpbnxlbnwwfDB8MHx8fDI%3D">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1547756536-cde3673fa2e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3RlYW0lMjB0cmFpbnxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1569000013469-113734206550?q=80&w=1829&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1505832018823-50331d70d237?q=80&w=1816&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1517081719774-67c8f09db5b5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1598178472335-5f5ed93d1d6c?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1541536885300-f567bdc04613?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1609667398982-2e1b9ae988ff?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1636010734287-8740b53fc004?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle10">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1535850836387-0f9dfce30846?q=80&w=1911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1471696035578-3d8c78d99684?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1507646871303-331b8f659227?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1613052271194-5427710fb39d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGZsb3dlcnN8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1568010967378-b92ea68220c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGZsb3dlcnN8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1516834474-48c0abc2a902?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1530903677198-7c9f3577a63e?q=80&w=1852&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1520690214124-2405c5217036?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGZsb3dlcnN8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1532156389043-4c0681be3891?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGZsb3dlcnN8ZW58MHwwfDB8fHwy">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle3">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1518203441944-e9578e4b1635?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ludGVyJTIwcm9hZHxlbnwwfDB8MHx8fDI%3D">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1573815536669-82d494eee862?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ludGVyJTIwcm9hZHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1488998155149-381d94d28869?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ludGVyJTIwcm9hZHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1484856299450-fb14549bca50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2ludGVyJTIwcm9hZHxlbnwwfDB8MHx8fDI%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1579660701808-0d7f4338a389?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdpbnRlciUyMHJvYWR8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1517690623533-ca77a9a4b402?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdpbnRlciUyMHJvYWR8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1520275720895-a5dc86efbfce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdpbnRlciUyMHJvYWR8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1483119624769-b1a73c256500?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHdpbnRlciUyMHJvYWR8ZW58MHwwfDB8fHwy">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1514897725570-7c65aee0b8bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHdpbnRlciUyMHJvYWR8ZW58MHwwfDB8fHwy">
+                </div>
+            
+        </div>
+        <div class="main circle" id="circle12">
+            <div class="imagecontainer circle" style="background-color:white;">
+                <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW50ZXJpb3J8ZW58MHwwfDB8fHwy">
+            </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1558442086-8ea19a79cd4d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1613914153139-79eafdf15d23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+                <div class="item circle">
+                    <img src="https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fGludGVyaW9yfGVufDB8MHwwfHx8Mg%3D%3D">
+                </div>
+            
+        </div>
+    </div>
+    <div id="lowercanvas">
+        <div id="text">
+            <p style="font-size: 200px; margin-top: -200px; margin-left: -1100px;">happy birthday</p>
+            <p style="font-size: 40px; margin-top: -30px; margin-bottom: 10px; margin-left: -1100px;">here's a switch to demonstrate how the world would look before and after you turn 14 (fourteen): </p>
+            <div style="display:flex; justify-content:center;">
+                <p style="font-size: 20px; display:inline; margin-right:5px;">before</p> 
+                <div class="toggle" style="display:inline-block;" > <div class="slider" style="display:inline-block"></div> </div> 
+                <p style="font-size: 20px; display:inline; margin-left:5px;">after</p>
+            </div>
+        </div>
+    </div>
+   <!-- <p id="fallin" style="font-size:50vw;">example text</p> -->
+</body>
+</html>
